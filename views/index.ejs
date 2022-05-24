@@ -1,0 +1,31 @@
+<% layout('layout/boilerplate') %>
+
+<link rel="stylesheet" href="/css/index.css" />
+
+<div class="container">
+    <div class="card" style="width: 30rem">
+        <div class="card-body">
+            <h5 class="card-title welcome">Welcome</h5>
+        </div>
+        <ul class="list-group list-group-flush">
+            <li class="list-group-item tv">Total Views : <%= totalViews%></li>
+        </ul>
+        <div class="card-body">
+            <form action="/game">
+                <button class="card-link" type="submit">Game</button>
+            </form>
+        </div>
+    </div>
+</div>
+
+<script>
+    const $icon = document.querySelector(".icon");
+    const $arrow = document.querySelector(".arrow");
+    const on = () => {
+        $arrow.animate([{ left: "0" }, { left: "10px" }, { left: "0" }], {
+            duration: 700,
+            iterations: Infinity,
+        });
+    };
+    on();
+</script>

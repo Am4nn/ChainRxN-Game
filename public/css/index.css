@@ -1,0 +1,114 @@
+body {
+    height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+        url("../res/6091442.jpg");
+    background-size: cover;
+    background-position: center;
+    text-shadow: 0 0.05rem 0.1rem rgba(0, 0, 0, 0.5);
+    box-shadow: inset 0 0 5rem rgba(0, 0, 0, 0.5);
+}
+
+h1 {
+    color: white;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+:root {
+    --subtlepink: rgba(238, 174, 202, 1);
+    --subtleblue: rgba(148, 187, 233, 1);
+    --buttonWidthsize: 200px;
+    --buttonHeightsize: 100px;
+}
+
+form button {
+    margin: auto;
+    padding: 0;
+    border: none;
+    border-radius: 35px;
+    width: var(--buttonWidthsize);
+    height: var(--buttonHeightsize);
+    background: rgb(238, 174, 202);
+    background: linear-gradient(30deg, var(--subtlepink) 0%, var(--subtleblue) 100%);
+    color: hsl(265, 32%, 78%);
+    font-weight: 600;
+    font: small-caps bold 3.6rem cursive;
+
+    box-shadow: inset 0 0 35px 0px rgba(0, 0, 0, 0.25),
+        inset 0 2px 1px 1px rgba(255, 255, 255, 0),
+        1px 1px 15px 2px rgba(154, 137, 164, 0.5);
+
+    text-shadow: 1px -1px 3px rgba(143, 162, 199, 1),
+        -1px 1px 3px rgba(192, 151, 178, 1);
+    outline: none;
+
+    -webkit-transition: box-shadow 0.4s, text-shadow 0.5s;
+    -moz-transition: box-shadow 0.4s, text-shadow 0.5s;
+    transition: box-shadow 0.4s, text-shadow 0.5s;
+}
+
+form button:hover {
+    cursor: pointer;
+
+    box-shadow: inset 0 0 35px 0px rgba(0, 0, 0, 0.15),
+        inset 0 2px 1px 1px rgba(255, 255, 255, 0),
+        1px 1px 15px 2px rgba(154, 137, 164, 0.1);
+
+    text-shadow: 3px -3px 5px rgba(143, 162, 199, 1),
+        -3px 3px 5px rgba(192, 151, 178, 1);
+
+    -webkit-transition: box-shadow 0.4s, text-shadow 0.5s;
+    -moz-transition: box-shadow 0.4s, text-shadow 0.5s;
+    transition: box-shadow 0.4s, text-shadow 0.5s;
+}
+
+form button:active {
+    background: linear-gradient(30deg,
+            rgba(210, 178, 212, 1) 0%,
+            rgba(177, 183, 223, 1) 100%);
+    color: rgba(192, 181, 218, 1);
+
+    box-shadow: inset 0 0 10px 2px rgba(0, 0, 0, 0.15),
+        1px 1px 15px 2px rgba(154, 137, 164, 0.1);
+
+    text-shadow: 1px -1px 1px rgba(143, 162, 199, 0.75),
+        -1px 1px 1px rgba(192, 151, 178, 0.75);
+
+    -webkit-transition: background 0.3s color 0.2s,
+        text-shadow 0.3s box-shadow 0.3s;
+    -moz-transition: background 0.3s color 0.2s,
+        text-shadow 0.3s box-shadow 0.3s;
+    transition: background 0.3s color 0.2s, text-shadow 0.3s box-shadow 0.3s;
+}
+
+
+
+
+.card,
+.list-group-item {
+    background-color: transparent !important;
+    color: white !important;
+}
+
+.card {
+    text-align: center;
+    box-shadow: 0px 0px 6px 4px hsl(0, 0%, 40%);
+}
+
+.welcome {
+    font: small-caps bold 50px cursive;
+}
+
+.tv {
+    font: italic small-caps bold 40px cursive;
+}
+
+.container {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

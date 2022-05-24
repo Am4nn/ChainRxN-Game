@@ -1,0 +1,45 @@
+<% layout('layout/boilerplate') %>
+<link rel="stylesheet" href="/css/game.css" />
+
+<div class="contain1 mb-5">
+    <div class="containLeft containSide boxntextshadow">
+        <div class="marginMe2 finalResult">
+            <span class="playerText"></span><span>'s Turn</span>
+        </div>
+        <div class="sphere3 marginMe1">
+            <section class="stageOfSphere3">
+                <figure class="ballOfSphere3 red"></figure>
+            </section>
+        </div>
+    </div>
+
+    <div class="contain2">
+        <%for (let i = 0; i < 8; i++) {%>
+        <div class="row1">
+            <%for (let j = 0; j < 8; j++) {%>
+            <div
+                class="<%= (i !== 0 && j !== 0 && i !== 7 && j !== 7 ) ? `c` : ((i===0&&j===0 || i===0&&j===7 || i===7&&j===0 || i===7&&j===7) ? `a` : `b`) %> <%= 8*i + j %> gridx col1 redBorder"
+                data-value="0"
+                data-background-color=""
+            ></div>
+            <% } %>
+        </div>
+        <% } %>
+    </div>
+    <div class="containRight containSide boxntextshadow">
+        <div class="marginMe2">Game Score</div>
+        <div class="marginMe1">
+            <div class="">
+                <span>Red :</span>
+                <span class="scoreVal">00</span>
+            </div>
+            <div class="">
+                <span>Green :</span>
+                <span class="scoreVal">00</span>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="/js/queue.js"></script>
+<script src="/js/chainrxn.js"></script>

@@ -1,0 +1,180 @@
+:root {
+    --red: 0;
+    --green: 110;
+    --blue: 180;
+}
+
+.sphere {
+    display: inline-block;
+    width: 7px;
+    height: 7px;
+    margin: 1px;
+}
+
+.stageOfSphere {
+    width: 7px;
+    height: 7px;
+    display: inline-block;
+    perspective: 1200px;
+    perspective-origin: 50% 50%;
+}
+
+.ballOfSphere {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(circle at 50% 50%, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.1) 40%, rgba(0, 0, 0, 0) 50%);
+    transform: rotateX(90deg) translateZ(-150px);
+    z-index: -1;
+}
+
+.ballOfSphere {
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    border-radius: 50%;
+    position: relative;
+    animation: shake 500ms linear infinite;
+}
+
+.sphere2 {
+    display: inline-block;
+    width: 300px;
+    height: 300px;
+    margin: 20px;
+}
+
+.stageOfSphere2 {
+    width: 300px;
+    height: 300px;
+    display: inline-block;
+    perspective: 1200px;
+    perspective-origin: 50% 50%;
+}
+
+.ballOfSphere2 {
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    border-radius: 50%;
+    position: relative;
+    animation: shake2 500ms linear infinite;
+}
+
+.sphere3 {
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    margin: 20px;
+}
+
+.stageOfSphere3 {
+    width: 100px;
+    height: 100px;
+    display: inline-block;
+    perspective: 1200px;
+    perspective-origin: 50% 50%;
+}
+
+.ballOfSphere3 {
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    border-radius: 50%;
+    position: relative;
+    animation: shake2 500ms linear infinite;
+}
+
+
+.red {
+    background: radial-gradient(circle at 50% 120%, hsl(var(--red), 86%, 74%), hsl(calc(var(--red) + 4), 79%, 70%) 10%, hsl(calc(var(--red) + 8), 93%, 30%) 80%, #062745 100%);
+}
+
+.green {
+    background: radial-gradient(circle at 50% 120%, hsl(var(--green), 86%, 74%), hsl(calc(var(--green) + 4), 79%, 70%) 10%, hsl(calc(var(--green) + 8), 93%, 30%) 80%, #062745 100%);
+}
+
+.blue {
+    background: radial-gradient(circle at 50% 120%, hsl(var(--blue), 86%, 74%), hsl(calc(var(--blue) + 4), 79%, 70%) 10%, hsl(calc(var(--blue) + 8), 93%, 30%) 80%, #062745 100%);
+}
+
+.ballOfSphere:before {
+    content: "";
+    position: absolute;
+    top: 1%;
+    left: 5%;
+    width: 90%;
+    height: 90%;
+    border-radius: 50%;
+    background: radial-gradient(circle at 50% 0px, #ffffff, rgba(255, 255, 255, 0) 58%);
+    filter: blur(5px);
+    z-index: 2;
+}
+
+@keyframes shake {
+    0% {
+        transform: rotate(0deg) scale(1, 1) translate(0.5px, 0px);
+    }
+
+    25% {
+        transform: scale(1.2, 1) translate(0px, 0.7px);
+    }
+
+    75% {
+        transform: scale(1, 1.2) translate(0.7px, 0px);
+    }
+
+    100% {
+        transform: rotate(360deg) scale(1, 1) translate(0px, 0.5px);
+    }
+}
+
+
+@keyframes shake2 {
+    0% {
+        transform: translate(2px, 1px) rotate(0deg);
+    }
+
+    10% {
+        transform: translate(-1px, -2px) rotate(-1deg);
+    }
+
+    20% {
+        transform: translate(-2px, 0px) rotate(1deg);
+    }
+
+    30% {
+        transform: translate(0px, 2px) rotate(0deg);
+    }
+
+    40% {
+        transform: translate(1px, -1px) rotate(1deg);
+    }
+
+    50% {
+        transform: translate(-1px, 2px) rotate(-1deg);
+    }
+
+    60% {
+        transform: translate(-2px, 1px) rotate(0deg);
+    }
+
+    70% {
+        transform: translate(2px, 1px) rotate(-1deg);
+    }
+
+    80% {
+        transform: translate(-1px, -1px) rotate(1deg);
+    }
+
+    90% {
+        transform: translate(2px, 2px) rotate(0deg);
+    }
+
+    100% {
+        transform: translate(1px, -2px) rotate(-1deg);
+    }
+}

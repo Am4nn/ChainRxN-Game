@@ -1,0 +1,116 @@
+body {
+    height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+        url("../res/6091442.jpg");
+    background-size: cover;
+    background-position: center;
+    text-shadow: 0 0.05rem 0.1rem rgba(0, 0, 0, 0.5);
+    box-shadow: inset 0 0 5rem rgba(0, 0, 0, 0.5);
+}
+
+
+.contain1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.contain2 {
+    background-color: white;
+    padding: 0 10px;
+    box-shadow: 0px 0px 5px 3px hsl(0, 0%, 40%);
+    min-width: 24.5rem;
+}
+
+.textWell {
+    font: italic small-caps bold 30px cursive;
+}
+
+.boxntextshadow {
+    box-shadow: 0px 0px 4px hsl(0, 0%, 40%);
+    text-shadow: 1px 2px 1px hsl(0, 0%, 70%);
+}
+
+.nonClickable {
+    pointer-events: none;
+}
+
+.col1 {
+    box-shadow: 0px 0px 3px hsl(0, 0%, 40%);
+    text-align: center;
+    cursor: pointer;
+    width: 2rem;
+    height: 2rem;
+    font-size: large;
+    border-radius: 20%;
+    display: inline-block;
+    margin: 5px;
+    position: relative;
+    overflow: hidden;
+    top: 0px;
+    transition: all 100ms ease-in-out;
+}
+
+.greenBorder {
+    border: 1px solid hsl(120, 50%, 50%);
+}
+
+.redBorder {
+    border: 1px solid hsl(0, 50%, 50%);
+}
+
+.blackBorder {
+    border: 1px solid hsl(0, 0%, 0%);
+}
+
+.col1:hover {
+    border-style: dashed;
+    border-width: 2px;
+    top: -5px;
+}
+
+.ballOfSphere3 {
+    box-shadow: 3px 3px 5px hsl(0, 0%, 40%);
+}
+
+.containSide {
+    height: 380px;
+    margin: 20px;
+    font: italic small-caps bold 30px cursive;
+    text-align: center;
+    min-width: 15.6rem;
+    background-color: hsl(192, 14%, 90%);
+    border-radius: 10px;
+}
+
+.containSide:hover {
+    background-color: hsl(192, 25%, 80%);
+}
+
+.marginMe1 {
+    margin-top: 50px;
+}
+
+.marginMe2 {
+    margin-top: 20px;
+}
+
+@media only screen and (max-width: 1000px) {
+    .contain1 {
+        flex-direction: column;
+    }
+
+    .containSide {
+        height: auto;
+        width: 380px;
+    }
+
+    .marginMe1 {
+        margin-top: auto;
+    }
+
+    .marginMe2 {
+        margin-top: auto;
+    }
+}
