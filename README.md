@@ -12,16 +12,16 @@ preview of website :
 To visit website on local computer :<br>
 Download the code and run "npm install"
 <br>
-and then run "npm start"
+And then run "npm start"
 <br>
-then open http://localhost:3000/ in your local machine to visit the site
+Then open http://localhost:3000/ in your local machine to visit the site.
 <br>
 # More things to be added soon
 
-> Integrate [Socket.io](https://socket.io/) to make game multiplayer
+> Integrate [Socket.io](https://socket.io/) to make game multiplayer.
 
-> create rooms and id for each game
+> Create rooms and id for each game.
 
-> store the progress of game, if player wants to continue the game after some time.
+> Store the progress of game, if player wants to continue the game after some time.
 
-> store the score in database and display on the leaderboard.
+> Store the score in database and display on the leaderboard.
