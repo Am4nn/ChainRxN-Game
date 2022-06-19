@@ -9,7 +9,8 @@ preview of website :
 ![Screenshot (701)](https://user-images.githubusercontent.com/86537681/174489854-0800a907-a812-44a6-b11b-4152a989d22a.png)
 ![Screenshot (702)](https://user-images.githubusercontent.com/86537681/174489859-40d273f3-b78e-4959-a2ff-3bd4cfb56fd8.png)
 <br>
-Or download the code and run "npm install"
+To visit website on local computer :<br>
+Download the code and run "npm install"
 <br>
 and then run "npm start"
 <br>
