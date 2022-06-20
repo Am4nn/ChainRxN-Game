@@ -1,5 +1,5 @@
 # ChainRxN-Game
-ChainReaction Game made using html js css and express<br>
+ChainReaction Game made using HTML, JS, CSS, EXPRESS.JS and MONGODB <br>
 A game used knowledge of graph(BFS) to implement the chain reaction portion
 <br>
 To visit live website goto : https://arcane-wildwood-56032.herokuapp.com/ Deployed on Heroku
